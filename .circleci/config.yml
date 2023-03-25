@@ -40,7 +40,9 @@ workflows:
         - node/run:
             pkg-manager: npm 
             override-ci-command: npm install 
-            resource_class: large 
+            resource_class: large
+            context:
+              - someContext
   example-workflow:
       jobs:
         - docker/publish:
