@@ -39,6 +39,7 @@ workflows:
     jobs:
         - node/run:
             pkg-manager: npm 
+            override-ci-command: npm install 
             resource_class: large 
   example-workflow:
       jobs:
